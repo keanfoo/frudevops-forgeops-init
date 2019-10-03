@@ -1,15 +1,8 @@
 {
     "stageConfigs" : [
         {
-            "name" : "parameters",
-            "parameterNames" : [
-                "returnParams"
-            ]
-        },
-        {
             "name" : "userQuery",
             "validQueryFields" : [
-                "userName",
                 "mail",
                 "givenName",
                 "sn"
@@ -20,15 +13,7 @@
             "identityServiceUrl" : "managed/user"
         },
         {
-            "name" : "kbaSecurityAnswerVerificationStage",
-            "kbaPropertyName" : "kbaInfo",
-            "identityServiceUrl" : "managed/user",
-            "kbaConfig" : null
-        },
-        {
-            "name" : "resetStage",
-            "identityServiceUrl" : "managed/user",
-            "identityPasswordField" : "password"
+            "name" : "retrieveUsername"
         }
     ],
     "snapshotToken" : {
